@@ -8,8 +8,8 @@ RUN export uid=1000 gid=1000 && \
     chmod 0440 /etc/sudoers.d/developer && \
     chown ${uid}:${gid} -R /home/developer && \
     wget 'https://ftp.mozilla.org/pub/firefox/releases/27.0/linux-x86_64/en-US/firefox-27.0.tar.bz2' && \
-    tar -xjf firefox-8.0.tar.bz2 && \
-    mv firefox /opt/firefox8 && \
+    tar -xjf firefox-27.0.tar.bz2 && \
+    mv firefox /opt/firefox27 && \
     ln -s /opt/firefox8/firefox /usr/bin/firefox
 USER developer
 ENV HOME /home/developer
